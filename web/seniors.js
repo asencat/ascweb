@@ -121,5 +121,5 @@ const dataset = [
 {"codi": "ASC0120", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 3", "nom": "Ramon", "cognoms": "Picarin Reula", "mobil": "639791389", "mail1": "rpicarin@asencat.cat", "mail2": "rpicarinr@gmail.com"}, 
 {"codi": "ASC0121", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 3", "nom": "Juan Luis", "cognoms": "Abad Marcos", "mobil": "617386233", "mail1": "jabad@asencat.cat", "mail2": "joan@ecofincloud.com"}, 
 {"codi": "ASC0122", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 2", "nom": "Ester", "cognoms": "Pinós Cavallé", "mobil": "649957956", "mail1": "epinos@asencat.cat", "mail2": "estherpc56@gmail.com"}, 
-{"codi": "ASC0123", "a/b": "A", "carrec": "GC", "centre": "Vallès Or.", "nom": "José Manuel", "cognoms": "Romero Sánchez", "mobil": "677441098", "mail1": "jmromero@asencat.cat", "mail2": "romerosanchez55@hotmail.com"} 
+{"codi": "ASC0123", "a/b": "A", "carrec": "GC", "centre": "Vallès Or.", "nom": "José Manuel", "cognoms": "Romero Sánchez", "mobil": "677441098", "mail1": "jmromero@asencat.cat", "mail2": "romerosanchez55@hotmail.com"}
 ];
