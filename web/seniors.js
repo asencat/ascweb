@@ -1,4 +1,4 @@
-﻿const dataset = [
+const dataset = [
 {"codi": "ASC0001", "a/b": "A", "carrec": "CE", "centre": "Centre A", "nom": "Francisco", "cognoms": "Turró Serrano", "mobil": "629199059", "mail1": "fturro@asencat.cat", "mail2": "fturro.asencat@gmail.com"}, 
 {"codi": "ASC0002", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 5", "nom": "Jordi", "cognoms": "Moreta Munujos", "mobil": "639813452", "mail1": "jmoreta@asencat.cat", "mail2": "jordi.asencat@gmail.com"}, 
 {"codi": "ASC0003", "a/b": "A", "carrec": "GC", "centre": "Centre A", "nom": "Juan Carlos", "cognoms": "Oliver Fernández", "mobil": "609375792", "mail1": "jcoliver@asencat.cat", "mail2": "oliverjc@orange.es"}, 
@@ -112,7 +112,7 @@
 {"codi": "ASC0111", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 5", "nom": "Antoni", "cognoms": "Pallès Soler", "mobil": "629738390", "mail1": "apalles@asencat.cat", "mail2": "antonipalles@outlook.com"}, 
 {"codi": "ASC0112", "a/b": "A", "carrec": "GC", "centre": "Vallès Or.", "nom": "Feliu", "cognoms": "Monés Pla", "mobil": "619243410", "mail1": "fmones@asencat.cat", "mail2": "feliumones@gmail.com"}, 
 {"codi": "ASC0113", "a/b": "B", "carrec": "GC", "centre": "------", "nom": "Josep Maria", "cognoms": "Ollé Solé", "mobil": "647563174", "mail1": "Baixa", "mail2": "calxiscu@gmail.com"}, 
-{"codi": "ASC0114", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 3", "nom": "Mario Luis Roque", "cognoms": "Barea Pernaut", "mobil": "637504254", "mail1": "mlrbarea@asencat.cat", "mail2": "mlrbp@hotmail.com"}, 
+{"codi": "ASC0114", "a/b": "B", "carrec": "GC", "centre": "------", "nom": "Mario Luis Roque", "cognoms": "Barea Pernaut", "mobil": "637504254", "mail1": "Baixa", "mail2": "mlrbp@hotmail.com"}, 
 {"codi": "ASC0115", "a/b": "A", "carrec": "GC", "centre": "Centre A", "nom": "Agustí", "cognoms": "Ferrer Sancho", "mobil": "660965833", "mail1": "aferrer@asencat.cat", "mail2": "agustiferrersancho@outlook.com"}, 
 {"codi": "ASC0116", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 3", "nom": "Jaume", "cognoms": "Romagosa Soler", "mobil": "615904137", "mail1": "jromagosa@asencat.cat", "mail2": "jaime.romagosa@icloud.com"}, 
 {"codi": "ASC0117", "a/b": "A", "carrec": "GC", "centre": "Vallès Or.", "nom": "Sebastià", "cognoms": "Sala Pascual", "mobil": "687561340", "mail1": "ssala@asencat.cat", "mail2": "tianet.sala@gmail.com"}, 
