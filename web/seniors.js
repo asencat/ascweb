@@ -125,5 +125,6 @@ const dataset = [
 {"codi": "ASC0124", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 4", "nom": "Josep Maria", "cognoms": "Martí Laforga", "mobil": "646018736", "mail1": "jmmarti@asencat.cat", "mail2": "jm.marti.001@gmail.com"},
 {"codi": "ASC0125", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 2", "nom": "Manuel", "cognoms": "Julián Ibáñez", "mobil": "682642449", "mail1": "mjulian@asencat.cat", "mail2": "manuel.julian.mj@gmail.com"},
 {"codi": "ASC0126", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 3", "nom": "Conrad", "cognoms": "Galofré Garriga", "mobil": "609121029", "mail1": "cgalofre@asencat.cat", "mail2": "conrad.galofre@telefonica.net"},
-{"codi": "ASC0127", "a/b": "A", "carrec": "GC", "centre": "Maresme", "nom": "Jordi", "cognoms": "Senespleda Raventos", "mobil": "619742116", "mail1": "jsenespelda@asencat.cat", "mail2": "jordisenespleda@gmail.com"}
+{"codi": "ASC0127", "a/b": "A", "carrec": "GC", "centre": "Maresme", "nom": "Jordi", "cognoms": "Senespleda Raventos", "mobil": "619742116", "mail1": "jsenespelda@asencat.cat", "mail2": "jordisenespleda@gmail.com"},
+{"codi": "ASC0128", "a/b": "A", "carrec": "GC", "centre": "Centre A", "nom": "Ana María", "cognoms": "Martin Ramos", "mobil": "626525207", "mail1": "amartin@asencat.cat", "mail2": "martin.ana.mria@gmail.com"}
 ];
