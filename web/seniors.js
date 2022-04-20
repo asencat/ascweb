@@ -102,7 +102,7 @@ const dataset = [
 {"codi": "ASC0101", "a/b": "A", "carrec": "GC", "centre": "Maresme", "nom": "Eva", "cognoms": "Salud Salud", "mobil": "609026731", "mail1": "esalud@asencat.cat", "mail2": "emsaludsalud@gmail.com"}, 
 {"codi": "ASC0102", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 3", "nom": "Josep Maria", "cognoms": "Grima Rosell", "mobil": "689402302", "mail1": "jmgrima@asencat.cat", "mail2": "josegrimm@yahoo.com"}, 
 {"codi": "ASC0103", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 3", "nom": "Ramon Maria", "cognoms": "Palou Brau", "mobil": "650759280", "mail1": "rpalou@asencat.cat", "mail2": "ramon.palou53@gmail.com"}, 
-{"codi": "ASC0104", "a/b": "B", "carrec": "GC", "centre": "------", "nom": "Miquel", "cognoms": "Pi Costa", "mobil": "650954502", "mail1": "mpi@asencat.cat", "mail2": "miquel@picosta.com"}, 
+{"codi": "ASC0104", "a/b": "B", "carrec": "GC", "centre": "------", "nom": "Miquel", "cognoms": "Pi Costa", "mobil": "650954502", "mail1": "Baixa", "mail2": "miquel@picosta.com"}, 
 {"codi": "ASC0105", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 5", "nom": "Rafel", "cognoms": "Viladrosa Albareda", "mobil": "646944365", "mail1": "rviladrosa@asencat.cat", "mail2": "rafelviladrosa@msn.com"}, 
 {"codi": "ASC0106", "a/b": "A", "carrec": "CE", "centre": "Maresme", "nom": "Jordi", "cognoms": "Berni Blanch", "mobil": "636980096", "mail1": "jberni@asencat.cat", "mail2": "berni.jordi@gmail.com"}, 
 {"codi": "ASC0107", "a/b": "A", "carrec": "GC", "centre": "Vallès Occ.", "nom": "Rafel", "cognoms": "Santasusagna Ferret", "mobil": "673866673", "mail1": "rsantasusagna@asencat.cat", "mail2": "rsantasusagna@gmail.com"}, 
