@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- meta block -->
+    <title>Initialization with config.data - DHTMLX Grid</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" />
+    <link rel="stylesheet" href="DHTMLX Asencat/lib/suite.css">
+    <link rel="stylesheet" href="DHTMLX Asencat/lib/index.css">
+    <script type="text/javascript" src="DHTMLX Asencat/lib/suite.js"></script>
+    <script src="dhtmlxBase.js"></script>
+    <style>
+      .font_size_grid .dhx_grid-cell{
+          font-family:calibri;
+          font-size: 1.0em;
+      }
+      .valor_positiu {
+          color:blue;
+      }
+      .valor_negatiu {
+          color:red;
+      }
+       
+    </style>
+</head>
+<body>
+
+   <section>
+      <div style="height: 100%; width: 600px;" id="Grid"></div>
+   </section>
+
+   <script>
+      // Utilitzo el "Layout" per fer el grid responsive
+      const layout = new dhx.Layout(document.body, {
+         rows: [{ id: "a", },]
+      });
+
+      var Grid = new dhx.Grid("grid", {
+         columns: [
+            { id: "asent", header: [{ text: "<b>Asent.</b>", align: "center" }], align: "center", adjust:"data" },
+            { id: "data", header: [{ text: "<b>Data</b>", align: "center" }], align: "center", adjust:"data" },
+            { width: 80, id: "any", header: [{ text: "<b>Any</b>", align: "center" }, { content: "selectFilter" }], align: "center" },
+            { width: 60, id: "mes", header: [{ text: "<b>Mes</b>", align: "center"}, { content: "selectFilter"}], align: "center" },
+            { id: "moviment", header: [{ text: "<b>Moviment</b>" }], align: "left" },
+            { id: "descripcio", header: [{ text: "<b>Descripció</b>" }, { content: "selectFilter" }], align: "left" },
+            { id: "factura", header: [{ text: "<b>Factura</b>" }], align: "left" },
+            { id: "import", header: [{ text: "<b>Import</b>", align: "center"}], type:"number", format:"#.#,00", align: "right", mark: function (cell, data, row, col) { return cell > 0 ? "valor_positiu" : "valor_negatiu" }, adjust:"data" },
+            { id: "pdffra", header: [{ text: "<b>F.</b>", align: "left"}], htmlEnable:true, align: "center", adjust:"data" },
+            { id: "pdfreb", header: [{ text: "<b>R.</b>", align: "left"}], htmlEnable:true, align: "center", adjust:"data" }
+         ],
+         /*width: 1000,
+         height: 900,*/
+         adjust: false,
+         selection:"complex",
+         autoWidth: true,
+         rowHeight: 25,
+         css:"font_size_grid",
+         tooltip: false,
+         data: dataset
+      });
+      layout.getCell("a").attach(Grid);
+
+   </script>
+
+</body>
+</html>
