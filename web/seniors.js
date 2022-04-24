@@ -1,4 +1,5 @@
 const dataset = [
+{"codi": "EMP0001", "a/b": "A", "carrec": "A", "centre": "Administració", "nom": "Ariadna", "cognoms": "Lucas Guzmán", "mobil": "722574445", "mail1": "ariadna@asencat.cat", "mail2": ""}, 
 {"codi": "ASC0001", "a/b": "A", "carrec": "CE", "centre": "Centre A", "nom": "Francisco", "cognoms": "Turró Serrano", "mobil": "629199059", "mail1": "fturro@asencat.cat", "mail2": "fturro.asencat@gmail.com"}, 
 {"codi": "ASC0002", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 5", "nom": "Jordi", "cognoms": "Moreta Munujos", "mobil": "639813452", "mail1": "jmoreta@asencat.cat", "mail2": "jordi.asencat@gmail.com"}, 
 {"codi": "ASC0003", "a/b": "A", "carrec": "GC", "centre": "Centre A", "nom": "Juan Carlos", "cognoms": "Oliver Fernández", "mobil": "609375792", "mail1": "jcoliver@asencat.cat", "mail2": "oliverjc@orange.es"}, 
