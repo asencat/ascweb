@@ -82,7 +82,7 @@ const dataset = [
 {"codi": "ASC0080", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 4", "nom": "Joan", "cognoms": "Sellés Mestres", "mobil": "607248150", "mail1": "jselles@asencat.cat", "mail2": "sellesj@gmail.com"}, 
 {"codi": "ASC0081", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre A", "nom": "Miguel", "cognoms": "Serra Piernau", "mobil": "650119124", "mail1": "mserra@asencat.cat", "mail2": "m.serrapie@gmail.com"}, 
 {"codi": "ASC0082", "a/b": "A", "carrec": "GC", "centre": "Osona", "nom": "Vicente", "cognoms": "Sicilia Zafra", "mobil": "656633056", "mail1": "vsicilia@asencat.cat", "mail2": "SICILIAVIC@gmail.com"}, 
-{"codi": "ASC0083", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 4", "nom": "Juan", "cognoms": "Solé Monte", "mobil": "670378207", "mail1": "jsole@asencat.cat", "mail2": "joansole49@gmail.com"}, 
+{"codi": "ASC0083", "a/b": "B", "carrec": "GC", "centre": "------", "nom": "Juan", "cognoms": "Solé Monte", "mobil": "670378207", "mail1": "jsole@asencat.cat", "mail2": "joansole49@gmail.com"}, 
 {"codi": "ASC0084", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 1", "nom": "Eduard", "cognoms": "Sumoy Bolufer", "mobil": "639134007", "mail1": "esumoy@asencat.cat", "mail2": "eduardsumoy@gmail.com"}, 
 {"codi": "ASC0085", "a/b": "A", "carrec": "GC", "centre": "Vallès Or.", "nom": "Ignasi", "cognoms": "Torres Godori", "mobil": "690312981", "mail1": "itorres@asencat.cat", "mail2": "ignasitgodori@gmail.com"}, 
 {"codi": "ASC0086", "a/b": "A", "carrec": "GC", "centre": "Bcn. Centre 3", "nom": "Antoni", "cognoms": "Traveria Morató", "mobil": "619745979", "mail1": "atraveria@asencat.cat", "mail2": "atraveria@traveria.cat"}, 
