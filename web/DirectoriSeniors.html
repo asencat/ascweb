@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Seniors ASENCAT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqwidgets/14.0.0/jqwidgets/styles/jqx.base.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqwidgets/14.0.0/jqwidgets/styles/jqx.light.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.6.96/css/materialdesignicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqwidgets/14.0.0/jqwidgets/jqx-all.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="seniors.js"></script>    
+
+
+    <style>
+        .baixa-senior {
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-25 0 54 24' style='width:24px; height:24px' fill='gray'><path d='M6 8C6 5.79 7.79 4 10 4S14 5.79 14 8 12.21 12 10 12 6 10.21 6 8M10 14C5.58 14 2 15.79 2 18V20H13.09C13.04 19.67 13 19.34 13 19C13 17.36 13.66 15.87 14.74 14.78C13.41 14.29 11.78 14 10 14M20 20V16H18V20H16L19 23L22 20H20Z'></path></svg>");
+            background-repeat: no-repeat;
+         }
+         .alta-senior {
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-25 0 54 24' style='width: 24px; height: 24px;' fill='orange'><path d='M6 8C6 5.79 7.79 4 10 4S14 5.79 14 8 12.21 12 10 12 6 10.21 6 8M10 14C5.58 14 2 15.79 2 18V20H13.09C13.04 19.67 13 19.34 13 19C13 17.36 13.66 15.87 14.74 14.78C13.41 14.29 11.78 14 10 14M19 15L16 18H18V22H20V18H22L19 15Z'></path></svg>");
+            background-repeat: no-repeat;
+         }
+         .gc {
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-25 0 54 24' style='width: 24px; height: 24px;' fill='blue'><path d='M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z'></path></svg>");
+            background-repeat: no-repeat;
+         }
+         .ce {
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-25 0 54 24' style='width: 24px; height: 24px;' fill='red'><path d='M15,4A4,4 0 0,1 19,8A4,4 0 0,1 15,12A4,4 0 0,1 11,8A4,4 0 0,1 15,4M15,5.9A2.1,2.1 0 0,0 12.9,8A2.1,2.1 0 0,0 15,10.1C16.16,10.1 17.1,9.16 17.1,8C17.1,6.84 16.16,5.9 15,5.9M15,13C17.67,13 23,14.33 23,17V20H7V17C7,14.33 12.33,13 15,13M15,14.9C12,14.9 8.9,16.36 8.9,17V18.1H21.1V17C21.1,16.36 17.97,14.9 15,14.9M5,13.28L2.5,14.77L3.18,11.96L1,10.08L3.87,9.83L5,7.19L6.11,9.83L9,10.08L6.8,11.96L7.45,14.77L5,13.28Z'></path></svg>");
+            background-repeat: no-repeat;
+         }
+    </style>
+    <style>
+        .jqx-widget-light .jqx-grid-column-header-light {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        /*.jqx-grid-content { font-size: 13px;}*/
+    </style>
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding: 3px;
+            box-sizing: border-box;
+            margin: 0;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var source = {
+                localdata: dataset,
+                datatype: "json",
+                datafields: [
+                    { name: 'code', type: 'string' },
+                    { name: 'state', type: 'string' },
+                    { name: 'center', type: 'string' },
+                    { name: 'charge', type: 'string' },
+                    { name: 'surname', type: 'string' },
+                    { name: 'name', type: 'string' },
+                    { name: 'phone', type: 'string' },
+                    { name: 'mcorp', type: 'string' },
+                    { name: 'mpers', type: 'string' }
+                ],
+            };
+            var iconcharge = function (row, columnfield, value, defaulthtml, columnproperties) {
+                if (value == "CE") {
+                    return '<div class="text-center text-xs"><span class="mdi mdi-account-star text-xl text-red-500 mb-4 absolute"></span><span class="invisible">' + value + '</span></div>';
+                }
+                else {
+                    return '<div class="text-center text-xs"><span class="mdi mdi-account text-xl text-blue-500 mb-4 absolute"></span><span class="invisible">' + value + '</span></div>';
+                }
+            }
+            var iconstate = function (row, columnfield, value, defaulthtml, columnproperties) {
+                if (value == "A") {
+                    return '<div class="text-center"><span class="mdi mdi-account-arrow-up text-xl text-orange-500 mb-4 absolute"></span><span class="invisible">' + value + '</span></div>';
+                }
+                else {
+                    return '<div class="text-center"><span class="mdi mdi-account-arrow-down text-xl text-gray-500 mb-4 absolute"></span><span class="invisible">' + value + '</span></div>';
+                }
+            } 
+            var textformat = function (row, columnfield, value, defaulthtml, columnproperties) {
+                if (columnfield == "code" || columnfield == "center" || columnfield == "phone") {
+                    return '<div class="text-gray-600 text-center text-[0.9em] mt-1">' + value + '</div>';
+                }
+                else {
+                    return '<div class="pl-1 text-gray-600 text-left text-[0.9em] mt-1">' + value + '</div>';
+                }
+            } 
+
+            /*var sizetext = function (value) {  
+                return '<div class="text-gray-600 font-bold text-center text-xs mt-1.5">' + value + '</div>';
+            };*/
+            /*var style = {
+                headerBackgroundColor: '#FFA705',
+                headerColor: '#000',
+                headerBackgroundHoveredColor: '#FE6602',
+                headerHoveredColor: '#fff',
+                headerBackgroundSelectedColor: '#FC3752',
+                headerSelectedColor: '#fff',
+                backgroundColor: '#fff',
+                color: '#333',
+                backgroundHoveredColor: '#c0c0c0',
+                hoveredColor: '#fff',
+                backgroundSelectedColor: '#FC3752',
+                selectedColor: '#fff',
+            };*/
+            var dataAdapter = new $.jqx.dataAdapter(source);
+
+            //Inicialitzo el GRID filtran els seniors d'alta
+            var StateFilter = function () {
+                var filtergroup = new $.jqx.filter();
+                var filter_or_operator = 1;
+                var filtervalue = 'A';
+                var filtercondition = 'contains';
+                var filter = filtergroup.createfilter('stringfilter', filtervalue, filtercondition);
+                filtergroup.addfilter(filter_or_operator, filter);
+                return filtergroup;
+            }();
+
+            $("#grid").jqxGrid({
+                width: '100%',
+                height: '97%',
+                source: dataAdapter,
+                autoshowfiltericon: true,
+                enablebrowserselection: true,
+                selectionMode: 'multiplecellsadvanced',
+                enabletooltips: true,
+                rowsheight: 24,
+                theme: 'light',
+                filterable: true,
+                sortable: true,
+                altrows: true,
+                columns: [
+                    { text: '<span class="mdi mdi-code-tags text-base"></span> Còdic', datafield: 'code', width: '8%', filtertype: 'list', cellsrenderer: textformat },
+                    { text: '<span class="mdi mdi-arrow-up-down text-base"></span> Estat', datafield: 'state', width: '8%', filtertype: 'list', cellsrenderer: iconstate, filter: StateFilter },
+                    { text: '<span class="mdi mdi-office-building-outline text-base"></span> Centre', datafield: 'center', width: '8%', filtertype: 'list', cellsrenderer: textformat },
+                    { text: '<span class="mdi mdi-star text-base"></span> Càrrec', datafield: 'charge', width: '8%', filtertype: 'list', cellsrenderer: iconcharge },
+                    { text: '<span class="mdi mdi-account text-base"></span> Cognoms', datafield: 'surname', width: '13%', filtertype: 'list',  cellsrenderer: textformat },
+                    { text: '<span class="mdi mdi-account text-base"></span> Nom', datafield: 'name', width: '11%', filtertype: 'list',  cellsrenderer: textformat },
+                    { text: '<span class="mdi mdi-phone text-base"></span> Mòbil', datafield: 'phone', width: '9%', cellsrenderer: textformat },
+                    { text: '<span class="mdi mdi-email text-base"></span> Corporatiu', datafield: 'mcorp', width: '18%', filtertype: 'list',  cellsrenderer: textformat },
+                    { text: '<span class="mdi mdi-email text-base"></span> Personal', datafield: 'mpers', width: '23%', filtertype: 'list',  cellsrenderer: textformat }
+                ]
+            });
+            $('#grid').jqxGrid('sortby', 'surname', 'asc');
+        });
+
+        $(document).ready(function () {
+            $("#information").jqxTooltip({ content: '<p style="text-align:left;"><b>ORDENAR</b><br />En prémer en la capçalera de la columna l&#39ordenem:<br /><i class="fa fa-chevron-up" aria-hidden="true"></i> Ordre Descendent<br /><i class="fa fa-chevron-down" aria-hidden="true"></i> Ordre ascendent<br />En blanc sense ordre<br /><br /><b>FILTRAR</b><br />En passar el ratolí per sobre de les capçaleres de<br />cada columna apareix el símbol:<br /><i class="fa fa-bars" aria-hidden="true"></i> Clicar per filtrar</p>', position: 'left', showArrow: false, showDelay: 100, autoHideDelay:8000});
+        });
+    </script>
+</head>
+<body class='default'>
+
+    <span style="padding:5px;font-family:ebrima;font-size: 1.6rem;font-weight:bold">Directori Sèniors<span style="float:right;padding-right: 15px;color:red;"<i id="information" class="fa fa-info-circle" aria-hidden="true"></i></span></span><br />
+    <div id="grid"></div>
+
+</body>
+</html>
