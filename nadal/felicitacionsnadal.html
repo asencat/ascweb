@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tailwindcss.com/favicons/favicon-32x32.png?v=3" />
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Varela+Round&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+</head>
+
+<body style="font-family: 'Varela Round'" class="text-[1em] text-slate-600">
+<div class="container mx-auto px-3">
+
+    <p class="text-5xl font-bold my-5">Felicitació Nadal 2023</p>
+    <hr>
+    <p class="my-5">A continució us presento tres felicitacions de nadal en els formats GIF(animació), PNG(fixa) i PDF. Triar el format que us convingui, per a enviar a les persones que cregueu adient felicitar</p>
+    <div class="flex flex-row flex-wrap gap-2 items-center justify-center mt-7">
+        <div>
+            <div class="flex flex-col justify-center items-center text-[0.9em] h-12 bg-orange-100 mb-2 p-1 rounded-lg"><p>Format GIF<p><p class="font-bold text-rose-600">RECOMANAT</p></div>
+            <a href ="Asencat_Nadal_2023.gif" download="Asencat_Nadal_2023.gif"><img src="Asencat_Nadal_2023.gif" class="w-52 rounded-lg"></a>
+        </div>
+        <div>
+            <div class="flex justify-center items-center text-[0.9em] h-12 bg-orange-100 mb-2 p-1 rounded-lg">Format PNG<br></div>
+            <a href ="Asencat_Nadal_2023C.png" download="Asencat_Nadal_2023C.png"><img  src="Asencat_Nadal_2023C.png" class="w-52 rounded-lg"></a>
+        </div>
+        <div>
+            <div class="flex justify-center items-center text-[0.9em] h-12 bg-orange-100 mb-2 p-1 rounded-lg">Format PDF<br></div>
+            <div class="flex justify-center items-center border w-52 h-[370px] rounded-lg bg-sky-100"><a href ="Asencat_Nadal_2023C.pdf" download="Asencat_Nadal_2023C.pdf"><i class="bi bi-file-pdf " style="font-size: 10rem; color:red"></i></a></div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
