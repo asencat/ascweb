@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <title>Procediment Conveni Microbank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" -->
+    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!--- Google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway&family=Varela+Round&family=Roboto&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .fs15 {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body style="font-family:Ubuntu">
+
+    <div class="container mx-auto sm:container sm:mx-auto px-3 my-5">
+        <div class="flex flex-wrap items-center gap-5 mb-5">
+            <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOgAAAA5CAIAAACzqfClAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAYWElEQVR42u1dCXxMV/ueWIralypB7VsXumlVW22pCkIFVR+tDx/aokUt3RTVWmqpRJJJJHaCImopiTV2UcRkJpON7JklkUT2ZSYz83/uPZOTkzuLSIaP73/f3zVm7lnumXOf857nXe5EYhJFlCdQJOIUiCICVxRR/r8D18gc9IwoojzWwDWajCJMRXnSgGssU654s+bW3X8FJS/+J61UhLIoDgGu8SFv3orMIregJIl7uGR1WKeA23oRuKI4ArhGo/kwOAL6hBuYP8Xnlsy/pGnkp5R4yCXSCLxOCUkVb5UojqIKRgtDqkrwJy+8qPJLvruiabE5klO03nKJj0LiEyHxkp9JzRNvlSiO0bg4sopKVfnV2sMpZJPydN9cUDtvi5K4yyVeCokvjgjuWB/uFpxsMBpFr4IojgFu9L3i5/fGttke9VZg3E+h2tOpeWmF+gfWt7wExGZzkF0vA2SdoGJ98arkUOspb745EhcS75MoDgEuBzjZ3SKJVCHZIJdsCJd4AHPy9juiZ55XXU8vtGu/GRk9a7qkzh9wKJ5TsZ5yQJYeHEngOg/fFn2vnFNUQwoLC8PCwvR6fXU6UavVd+7cEUHzZHNc6NdntkWbdaSUh5qnHDt7bWnEtJBUVYHetpblIKgzGP2UWY03RaIJh1FCDPjDiaO2CtDcaedSHeXDuHz5cq1atZYsWVLlHkpLS1977bW+ffs+cfc4MTHx4sWLWLdxcXEpKSnJvMjl8uvXr9+4cSM2NjY/P/+/PkiNRjN//vzQ0NBHwHFNk86mclYU0ZHAHL/LS7w5zLXZHu2vzDLYANuN9MIhRxO5tl68+eWjYNUt19sGeZeAmMzi0jIebKgmcAMDAyUSScOGDWNiYqrWw8GDB9HDSy+9BAQ/KZA18mQsICCgSZMmWLctWrRo3bp1q1atmjZtWqNGDQkveNOtW7dRo0bt3LkzJyfn0Q8Sa2nFihXt2rXDYPbt2/eQgcuj6ObdwtoAmbec6Eju1bdso/fkNvqhRxMisyow1JvpRZPPpNQDysEupJxyFUCW199KiUf4rthsIcGohvj4+JD7NGHChCo0NxgM/fr1Q/Pu3bvn5T15Lo4zZ8489dRTkjIZMmQIzhw5cmTdunUfffQRPf/CCy/s37//kY3q6tWrrq6uWEt0AH/99dfDBq4ZRl9eUHN7PQfWivjzVXL8Yb2s9daoq2kFqBl1r3jy6ZS6nKNAxmnlipClzXlPguzNg/E6gyPdCMuWLSNT4+TkdPr06QdtvnfvXtK8bdu22NSeOOBC9fbs2ZPiY/v27WzpgQMHsBfRUqlU+mhG9ffff7OofQTA5XdvHrtphaXP7YzhTSsly1N5ICo55rBB3gZG20WV8/YoyfpbgKwTR4jlFSqT+jjvy5l6zTZH3Si38BwjM2bMoLMD3anT6Srftri4uHfv3qQt9lxLsqHVaqdPn96nT5/Vq1eXlJQ8hsCFbQptSmfAz89PUMHDw4OWQjeDAT8yntCmTZtHCFzGzJdGZBKlK9Cg/KHkIwgK3u3Aq1gp8XYphBrah4e+l7yeT8SxpDzWjHOIfPLJJ+zK3rx5c+Xb7tq1izYEU4RNI6gwefJkWgFM8fEE7vPPP28HuOnp6c8++yytMGvWrEc2tvHjxz9CqsBAqqTUOJCztGRCqupbzgEYmCqchGfKgO4NdSvfWYHaOkwGDhzIAve55567e/duZRpCN7/88su0IZhGSEiIoA4oI62wfv36J1HjQt5++21aAe8fmQ06e/bsqgPXnEdoQ8kV6EvVBTptgZ4cmgJ9gb6CmX+vuLTnntswyCwtrUoenEfMQ77oH+3DmBqA7/XXX5dUlB9++KEybWGSCxrCphHUuXDhQq9evWCqDx06VKVSPf4a19fX17LOhx9+SCu88sorIEiPZmy//PJLdYBbQYnKMooCbmf/djP9PyGqD44kdAqIab092nlH2bE9utOu2Jf33xn8d+LEM6lTQ1R+yqxZF9U1vHnflu+DH2jlHr7g6sMyerKysrp06SLAX4MGDZRKpf2Ger0et1DQcMuWLZY18/Pzk5OTH1vjTABckB9LLzX7TYcPH/7IxrZmzZrqUgV5ZtGqsLv9AuPq+0VyrNRdxuVnbQjnIgtefAoBPThvl4KPmfGHe3hN34gavlXStXj1lE84nWJJQhwlSUlJsJqdnZ0FTHfMmDH2G+7Zs4cYZKAWtNXatWufOK8CgMt6FWDOCyrIZLKnn37a/uJ8SLJt27aqAzezSD/jgqrBRiVnZm0gmVlKykolPgqbmCuP0FaVJHhH1JJGXNYUMA4LB0tkZGSNGjU6duwYHR394osvEqpKZurUqVN21O2rr76KOj/++OOECRPo5H733XdW6+Pez5w5E9eyWnrv3r1Dhw6tWLFiypQpY8eOnTNnDgz5oKAgWEWWIMPu+ccffxD/8caNG6dOnYrVYhltjo2NBcIwvHHjxk2aNOm3334LDAzMzMy0+l369u1rC7igUiA5tNTFxUXAEzIyMq5duwaOdIgXNI+Kirqv5/jixYvkfUJCwtGjRw8fPmzVWbF161ZL4Op4YR07AkcQB9w8neHV/Xcka2+Z41i+1u2nh3dIvBW99sSGphU+pDV95coVEjswlQXAqLz55pu2XGNkQhs3bozb9sUXX9AmQB67w6ampu7evXv06NFEY/3555+WDBuw69y5M+2BdZq2atXK3d2dUhqoH0LHsTmgIbtFgIPSPkFyUNSoUSNSVL9+fboUO3TosHLlyqKiIsEwBg8eTLtiPdkREREff/wxSxIEZitWY+vWrWvXrs3OGy4NAw4gFppDBQXBwcFYmajz5Zdfgv3DcqVtMc4BAwZQQNsBrpeXF74ILtG/f38Yx23btgXuhcDN1xncgpPrSCP4ZAOZxDOcCxBIq0pYq3Z4yJv6R55TPZSgOaYDkwJdSyxl9j5BfHx8rNijBQU9evRA6dy5c/Fx3rx5tL6bmxsbmGBRCMEZgaKlyqx58+a///471CRWQkxMzMKFC8l5KEvU/Pnnn2He0X6gRNnVAqFpEriFLVu2JCdHjRqFZQmoqdVqrJ+uXbuS8wMHDsRV2JEMGjSIReeCBQu++eYbnASYSOAXEBEEJohQuxb4A2WCbcCOigZpwcfwTYEwWoTvW7NmTbyiB9AtFvS3bt2yD9y0tLT27duTk9j3MKuCgGW5cZaQo9sYmfVFSGqPPbF1fCM5ELvz/NVbQXH8EJWujxKXw6Xz9AaHA9fPzw/f/6233iIfARoWbe3atbPcr/39/ckUx8fH4+Py5ctp/XfffZfdQ5ctW4bbQ0tZjYsNjqIWXV26dElwFVj3KEIdsrpY86hu3bp4xeJZsmTJjBkzABpYV6h248YNCp3PPvtM0GFcXBz15wO7WH5WgWspgC8WJ8BnOXtkVPPnz8eSwzrEvo89hzaEOiAxFyyeRYsWkWET6dSpE1QymoCo3L59+7333qNF7MitAlelUpGgGhYY+FKl/LhgDlFZRT4RmVPOpA4/ntRsS1QdcF/vCC7Fm2PAct5WU3BnCKDNyK4mdnkF7xH+cVCy2pxZ5jCy++uvv2IK3n//fXqGBSIE94ytj32W2OCzZ89mcUwVgCA9ElC2ClxPT096HgrV6tiAWqg68h53F8yENsFeCR5Cio4dO4YVgoFh+ZHSFi1a0FJWvL29aQ9Q8FaBu2PHDg0voaGhS5cuBV2h8AVQBAR35MiRqCPw0tDlgQWJYdMi0AN6lQ0bNggsjXr16pEi2Bs0xMgCF0TOxKePgsLhIzalqgcg0or0EZlFhxNyVt3K+OK8dvCx1N774zoExDbZHFnfX/mUX0QdP2U9v8jaG5XVAm65X+xWnz9vX3Uo3501axbZfFkmwKo30FOFQkFLN2/eTJgoUbcQ2CW0MriyIIsK2oiW7tmzh16C+uAACPbuCuwe6pWD0nJ2dqZdAfeCyuwwQBJsuVAo5cBmQofKAvfEiRNsE1haxGYlAvYMA5FdxpZXAV+iXkV26mAg2gIuhK46rE+g0xK4MOmgoQk5wRKqcuTMms4zlhQbTbl6091C/e2c4rC7ReEZhdFZJdPOqzheUR2aSym1e7jztmgHPvjw6aefYiI+//xz9iRuHrvFU+ZK1e3XX39NK0Mz0ZrAlkDVrVu3zjJyFhISwvrzKzPO7Oxs6neDsQXyKqjAsl5YYLb6eeONN2i1oKAgS+DCxhc0AQMhZJcI9ijLbjMzM+Vy+c2bN8PDw2lvAC7rK1i8eLEd42HMmDF0JVP3CwtccCcXFxe8Af9+0JCv0VgxgEZyOo15kXrlHMM/rsbQ903yf5uKUwTNhh1LhIFlIypWOQeF1BwlduLjEX0O3MnVOYbvksw96EXBeUCZJQzHjx+n84j7wbqfoqOjaQIrtAU+sv3s3LnT0su7ceNGehIDqORQoc5pUgTwIYgRsDQxICDAViesb4suJPvAhUCF0wowjLCKWBt0xIgRhL9iI2KJLGwvEGtaE5cT7PusTJ8+ncKdziELXNozzEf76e0S25qWeckJ153poDsq0R2vU3K8ru6wRC+bZDIayqLEptjskvr+kVzmlxVEKs1P+HAkWHlfwlDOHNbL/hOiqn5UAlyqT58+xB1ruauCKbKuMWzcxHcryDJJSUnBHbKVZ8OGhaF9WcPL0pNlX2h8CzqJbqb0i5Cx3ddXP2zYMFqN+IMrA1yWkUOIvgd7oWrynXfeAYm6evUqtDiZUsJGWPcFG02wdJbNmTOHApcm2bHAZbU+qJ3R9oO4ksqk0pRG/8ih9kRz8xHUSHeihTFHRmusvpVOH4WokDcj5WJsP1zT4uDfyyW+Sg6UfNaYTQ+DrzkwIfGQbY3KKhtIFbELS4I4iaymvwjuVr9+/bBHY1oFlFQQNAYVY0vZ9DEKXPYWYgCVTHccMGAATQMC22OLYFyzqUIwsOzvMIL9+r7ABc7YqYA5iJM08oKBsV/hq6++ognKrN93y5YtdpYWCIB94G7atIn9jpab5INx3NJb40v+rlUS3KzsaKo7VsugOWAuNRrfPBjHxdsq+n05Xesp77QrpkDP9XMwIaf9jmjzE2a8JnayS3a55h6KzgGxOSWl1YmoJScnE2UJJFnNv6EWA5UZM2ZYVmMjT4JN0Cpww8LCKLuAkj558mRlRkvh1a1bN8tHLebOnUsvBDZp/Z4Zjaylde3atUoCF6BhJ+HSpUuwGm0xE5rS5Vjgnj17FvsM8aDbz7a7D3AJWAzx7rojEl1QA11wY11QQ+79xddNJeacmCvagho8kbVwzXIPn31+ptyOScjVjT+VwuldT4XE157GNa8B9OARPjmkWvlWMAJI5MYyQE/k8uXL7GMtlupWoAsh/v7+9wUuKCnrJqskW6ApWlDSubm5glJs0zRC9sEHH9j6vnTDxYZO44L3Be7EiRPZLRtX3717t8AAoALLlVIFNshcTeASjRAbG0seQYPAgLYMRlaCKvB2mkGfW6qcozvlrDvZUneqjf7Ke4bsfyiwV4Sl84nkCiuZDF7yvbeF+bXu4RlNNkVyLghKaqV20h0joMt33753f3eHDQEhs5VZYqk/INgE7UPK0ilrleMS5yurw3766SerPQOOUM+CXR4a1xK41ENC7BgY+JYVQOXpFQ8cOEDPE2udSHBwsKVXgQ2JAcQC77WA9NNQYqtWrVjnIIvCKnBc2iQ0NJRGBxs1aiSIElfGj2ukWbrGgjjTvWumvGhGHXMAmnIulcsjs8Scl6L5lmhVvpVMgIis4gGHEzi4e9vM4ClX2xvkz+2MSS+khOHBOANx4toJARATpEOHDkTT2HoMmDWMwMPYon379tEiLy8vqzqGrgrWBgc0/fz86tWrR2OtMIBo2MlqKrdKpaIp4WDkaWlpbCn0IsUfTHi2iLj0rT6mcf78eTaVAjW1Wi3Zi+jJOnXqrFmzBpcDTEEh6GYCOvTtt9/iW5Am7OZDWDIrNDzRsGFD2LtsCp6lkoaipUkOzs7OGMyDAtdk83c9sDLSCvm4mhl/ghTb4ceTDMJm5q6KSg0Lrmpq8QpV4qOw5dw1G3nr5VPPqQzGB0sfy87OxmoGv6RRBiDM1jO6sHVsuQ/z8/Nhmwt4sFQqJRoxPT2dffhk6NCh9JaQtCwoJ7q/Q5o1a+bm5jZ16tRJkyYRqxE0kXQF1Qt80JoYPBuzLWdcCQnkkWOimMECz507B8hi36CsGls5taXAGllPM4m6LVy4EHbb0qVLWRcEpgijYgPg7FNJkNatW7dv3x5XYQMlJDQdHx+P9T9u3Dh6EuNhNw0Mm30KA2sVkwOrl828w3ucoaGZZ555hn1oCt+C0pL7ehWMVh29/Gnu3/KbaZziND8dqWCfaHDyUpxNzbfBm83dnlHlvbjnNm+x2U8fk9f0jSgLSVRW6WKna9q0KdhSD16AD1hpgiQj1kuKm2Q1KfHIkSO4023atOlRJniProjeguVLLtGzZ0+84taOGDFC4EMICQkZOXIkexuougJ2CWPGiurfvz80H7lE9+7dLVOiysPyeXlr167t1auXoMPGjRu7urqyhqDBYICt2bFjR0Ccjh8fMZgmTZpgh4G+x0cQoZUrV8pkMstko++//54dOd57eHhgMUybNo0ss7FjxxLFD9sR00JmA69gEatWraILGANDW3wpUooFAMNx+fLl2OvIqDBC0AMaXob2xfLAzkNKMTO4C7RDiS16wCKtVJtUqkksTU816ksYBy/3/9xLGsl6mUWGrhLkweVYom2ElZ/XFpaODk4mPw7C810F0w+zEtzlv9xIfyCSAI0L5UeVFhQnPtpxa1tN5iAoSU1NZb2V0Aroirjocc9YLY4iVLbaVWJiIgj3Dl4AeuhIuVxOjSesHKCBzYIg+7KdL4i2oLnYaqGbt23bhq0ZWs2qJ9vSIVpcXKzmBVv8fZ95TkpKCgwMxLDxyvoQrl+/zjpY0BW+O1GKmIfk5GTKZDAAFOFyZBrv3buHUtwLVKapEZg0jUZD9T20NXgRu+egMr0LEvu8tvjayczF49PG906b0Dtt4qsZ37npU6jFbdQbjK8fiKM/+1X+A0recidv+Xl1/v12diN1qC2+rq3J/1hYuU/NQuk22BSpyCxybP6NKE+oSOwow9zdf2iGOWuGttK4ddKO7KwZ2UH9UYuMeSMMBWbikphbXNdfWf7LXxxVVXDeWXf5JydTbJONCpeixSeS83sExHB2nrSiU8y3PIdh3KkU8Z6JYjNXAf8VntmvcW2jGdlRO6abdkzXNO61u3Z0N7XLs4VnA0nV3bezuWfRpAJnQsTTfkpFZrF14iEk0BWMv4S8krcD4/hfdVY4+VphunV8lZe1+eJtE8W6cVaqTbk77R21a1sOrBxky45POOBmrzNnqU45qwLIhGFed9lXF9QPOIxyZOfpjQuuaCVe3KNv9IdFeLKrJJ6K0SeSGeSLnEEELmtLHvLXuLTUsJAtOzTD24ItmEo5K63vwXjJBrnAd9tsc1RcTnUzEg/EZXfeFcupXvoEEXG3SRW1pdRZYbTPdzdt2jRmzJjPRPmfkAkTJowdO5ZGkawDN3vNTPWQZ7XWgKsF3/3XS6b0pMRiU5PNXEZYBd/tetnKm+kOWVLaQv20EBVHRTzl7A/hQKOPPpFUmRCap6fnoEGDhovyPyGurq4uLi6BgYH2gJu1eqbapZV14I7qrHXrYoqT3cw11uIf6SlXtx7hbx2ML6z2Q2Oso3fvHZKaI5NIzRoXS6W+v/JOdrHoXhCpgoXGdf9WI9S4ZWR3ZMe0f79myk8LTCninjyTllFbL0U934gb6UUOH2Jynm7CyWROtXN/PYpnDpxPN00ErghcoeRuXa4e2lo7mgVuV2BXg8O1bca3w0wm3bKwLC704Ksoi8qGz7uiYf0SjpXTKXkDD8dzP5/jwT2w2W5njIZ7plL8azwicCsaZ+qPWmhHdxG4FABlzaAWudtWoM5vN+9K/pDx7Jb7FdGKv3zvQDCV/xE1/PsrPnf48cQ6uOjqW+6KDFHpisCtCJb87KzFn6s/bKp161yucUd3BfFNn/5OaTqXYrsq7C5HPXmS4OQtD07OMzuojI71UllZBrKMwtU300LTCsT7JwJXaB0Z83NzPOZpP26vHtxSPdRZM6SVelDz7PVzSzPM+eMzLqi5KJcX9+t3a2QZD3OQok4VpbLANWOlJOx8jsf8zEWfZi6dmLfP06QvoUha9E+aZGVYLanCR5klzqMo/33gGiv+Ur4t/bf3TnbfPbGHEnLMBpkYxBLlMQCuifx1aGPF8+RJHkJjDUajzlwu/qVdUR4P40wUUUTgiiKKCFxRROHl/wC0lC03QTnKqAAAAABJRU5ErkJggg==" class="w-44" /></div>
+            <div class="text-2xl font-bold">PROCEDIMENT CONVENI MICROBANK</div>
+        </div>
+
+        <p class="font-bold my-3">L'objecte del present conveni és establir una línia de finançament dirigida a:</p>
+        <ul class="ml-9">
+            <li><i class="material-icons pr-2 text-yellow-500 fs15">double_arrow</i>Potenciar l’autoocupació i incentivar l'activitat emprenedora afavorint la igualtat d'oportunitats d'homes i dones, nous residents, persones amb discapacitats i amb especial atenció als col·lectius vulnerables en situació d'exclusió financera.</li>
+            <li><i class="material-icons pr-2 text-yellow-500 fs15">double_arrow</i>Finançar l'establiment, consolidació o ampliació de microempreses, negocis d'autònoms i projectes d'autoocupació amb l'objectiu de contribuir al desenvolupament del teixit productiu, la creació i consolidació d'ocupació i la contribució al progrés social.</li>
+        </ul>
+        <p class="font-bold my-3">ASENCAT es compromet a:</p>
+        <ul class="ml-9">
+            <li><i class="material-icons pr-2 text-yellow-500 fs15">double_arrow</i>Detectar les necessitats de finançament dirigides a promoure l'autoocupació, i a l'establiment, consolidació o ampliació de microempreses i negocis d'autònoms.</li>
+            <li><i class="material-icons pr-2 text-yellow-500 fs15">double_arrow</i>Facilitar els serveis de suport i assessorament empresarial que es considerin necessaris pel bon desenvolupament del projecte.</li>
+            <li><i class="material-icons pr-2 text-yellow-500 fs15">double_arrow</i>Analitzar la viabilitat del projecte. Per poder accedir a les condicions de finançament establertes en aquest conveni, els projectes d'empresa hauran de comptar amb un pla d'empresa i el corresponent informe favorable de viabilitat elaborat per l’entitat.</li>
+            <li><i class="material-icons pr-2 text-yellow-500 fs15">double_arrow</i>Al lloc web de MicroBank hi ha formularis per al pla d’empresa i viabilitat que ASENCAT assumeix com a idonis per a la tramitació de la sol·licitud, de la mateixa manera que MicroBank admet les nostres eines.</li>
+            <li><i class="material-icons pr-2 text-yellow-500 fs15">double_arrow</i>Es tracta doncs de que per emetre l’acreditació de viabilitat del projecte, el sènior sigui conscient de la responsabilitat que ell i ASENCAT assumeixen.</li>
+        </ul>
+
+        <p class="font-bold my-3">PROCEDIMENT:</p>
+        <ul class="ml-9">
+            <li><i class="material-icons pr-2 text-yellow-500 fs15">double_arrow</i>El sènior responsable de la consultoria envia un mail a vfernandez@asencat.cat amb les dades que figurin a PRISMA, acreditant que l’interessat té confeccionat un pla d’empresa viable o, com a mínim, un pla de viabilitat financera a tres anys, validat per ell.</li>
+            <li><i class="material-icons pr-2 text-yellow-500 fs15">double_arrow</i>Resoltes les consultes que al respecte es poguessin plantejar, Adnibistració emetrà una acreditació que serà enviada a l’interessat i que també haurà de signar, autoritzant el tractament i cessió de dades de caràcter personal per part de Microbank.</li>
+            <li><i class="material-icons pr-2 text-yellow-500 fs15">double_arrow</i>ASENCAT comunicarà a MicroBank l’emissió d’aquesta acreditació de la que en quedarà arxivada còpia a PRISMA > Relacions Externes > Entitats > MicroBank.</li>
+            <li><i class="material-icons pr-2 text-yellow-500 fs15">double_arrow</i>El sol·licitant lliurarà a MicroBank (CaixaBank) aquesta acreditació signada per ell, juntament amb la documentació que li sigui requerida.
+            </li>
+        </ul>
+
+        <p class="mt-5 ml-9">Orientativament:</p>
+
+        <div class="flex flex-row justify-center gap-5 w-full my-5">
+            <div class="shadow-xl h-84 w-1/2 rounded-xl">
+                <p class="p-2 text-center text-lg text-gray-500" style="font-family:'varela round'">Emprenedors sense activitat iniciada</p>
+                <ul class="ml-3 p-4 text-sm">
+                    <li><i class="fa fa-caret-right pr-3 text-yellow-400 text-xl"></i>Pla d’empresa extens i exposició del projecte a finançar.</li>
+                    <li><i class="fa fa-caret-right pr-3 text-yellow-400 text-xl"></i>Pla de viabilitat financera</li>
+                    <li><i class="fa fa-caret-right pr-3 text-yellow-400 text-xl"></i>Declaracions d’IRPF</li>
+                <ul>
+            </div>
+            <div class="shadow-xl h-84 w-1/2 rounded-xl">
+                <p class="p-2 text-center text-lg text-gray-500" style="font-family:'varela round'">
+                    Autònoms / Empreses
+                </p>
+                <ul class="ml-3 p-3 text-sm">
+                    <li><i class="fa fa-caret-right pr-3 text-yellow-400 text-xl"></i>Pla d’empresa extens i exposició del projecte a finançar.</li>
+                    <li><i class="fa fa-caret-right pr-3 text-yellow-400 text-xl"></i>Pla de viabilitat financera.</li>
+                    <li><i class="fa fa-caret-right pr-3 text-yellow-400 text-xl"></i>Declaracions d’IRPF / Liquidacions impost de societats, darrers exercicis.</li>
+                    <li><i class="fa fa-caret-right pr-3 text-yellow-400 text-xl"></i>Liquidacions IVA, darrers exercicis i trimestrals exercici en curs.</li>
+                    <li><i class="fa fa-caret-right pr-3 text-yellow-400 text-xl"></i>Balanços i comptes de resultats, darrers exercicis i trimestrals exercici en curs</li>
+                    <li><i class="fa fa-caret-right pr-3 text-yellow-400 text-xl"></i>Societats: Liquidacions impost de societats, darrers exercicis.</li>
+                    <li><i class="fa fa-caret-right pr-3 text-yellow-400 text-xl"></i>Justificar estar al corrent de pagaments amb la Seguretat Social</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="my-3">ASENCAT canalitza les operacions a MicroBank, amb la finalitat de que atenguin l’interessat a l’oficina que esculli segons els termes del conveni. Si aquest ja és client d’una altra oficina de l’entitat, ho pot tramitar a través d’aquella però caldrà que ens n’informi per tal que MicroBank informi a la de l’interessat de les condicions i en faci un seguiment.</p>
+        <p>La concessió o no del finançament és a criteri exclusiu de MicroBank i ASENCAT no té ni pretén tenir altra influència que la de l’emissió de l’acreditació descrita, que per ella mateixa ens compromet.</p>
+    </div>
+
+</body>
+
+</html>
