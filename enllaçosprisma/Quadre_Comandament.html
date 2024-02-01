@@ -6,10 +6,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" sizes="32x32" href="../images/asen.png" />
+        <!-- daisyUI -->
+        <!-- link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" / -->
         <!-- Tailwind -->
-        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <!--- Google fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Raleway&family=Roboto&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -24,13 +26,13 @@
 
     <div id="mySidebar" class="h-full w-0 fixed top-0 left-0 bg-black overflow-x-hidden duration-500 pt-12">
         <a href="javascript:void(0)" class="absolute mt-2 top-0 right-6 text-slate-400 text-xl ml-12 font-bold hover:text-white" onclick="closeNav()">X</a>
-        <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item1')" id="defaultOpen">Consultoria/Expedients</a>
-        <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item2')">Universitats i Ensenyament</a>
-        <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item3')">Acció Social</a> 
-        <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item4')">Formació</a>
+        <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item1')" id="defaultOpen">Àrea Consultoria</a>
+        <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item2')">Àrea Universitats i Ensenyament</a>
+        <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item3')">Àrea Acció Social</a> 
+        <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item4')">Àrea Formació</a>
         <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item5')">Sèniors/Col·laboradors</a>
         <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item6')">Convenis/Acords</a>
-        <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item7')">Qualitat</a>
+        <a href="#" class="py-2 px-4 no-underline text-base text-slate-400 block duration-300 hover:text-white" onclick="openTab(event, 'item7')">Àrea Qualitat</a>
     </div>
 
 
@@ -92,18 +94,18 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-left pl-2 text-amber-500 font-bold">Web</td>
+                            <td class="text-left text-sm pl-2 text-amber-500 font-bold">Web</td>
                             <td class="bg-white">&nbsp;</td>
                             <td colspan="3">&nbsp;</td>
                             <td class="bg-white">&nbsp;</td>
                             <td colspan="12">&nbsp;</td>
                         </tr>
                         <tr class="bg-cyan-50 text-center">
-                            <td class="text-left pl-2">Entrada x Web</td>
+                            <td class="text-left pl-2">Web</td>
                             <td class="bg-white">&nbsp;</td>
                             <td>143</td>
                             <td>104</td>
-                            <td class="text-red-600 font-bold">83</td>
+                            <td class="text-red-600 font-bold">84</td>
                             <td class="bg-white">&nbsp;</td>
                             <td>9</td>
                             <td>13</td>
@@ -112,18 +114,18 @@
                             <td>9</td>
                             <td>10</td>
                             <td>9</td>
-                            <td>&nbsp;</td>
+                            <td>1</td>
                             <td>6</td>
                             <td>3</td>
                             <td>6</td>
                             <td><span class="text-blue-600 font-bold">5</span></td>
                         </tr>
-                        <tr class="bg-slate-400 text-xs text-center text-white font-bold">
+                        <tr class="bg-blue-400 text-xs text-center text-white font-bold">
                             <td class="text-left pl-2">Totals</td>
                             <td class="bg-white">&nbsp;</td>
                             <td>143</td>
                             <td>104</td>
-                            <td><span class="bg-white px-1 rounded-xl text-red-600">83</span></td>
+                            <td><span class="bg-white px-1 rounded-xl text-red-600">84</span></td>
                             <td class="bg-white">&nbsp;</td>
                             <td>9</td>
                             <td>13</td>
@@ -132,14 +134,14 @@
                             <td>9</td>
                             <td>10</td>
                             <td>9</td>
-                            <td>&nbsp;</td>
+                            <td>1</td>
                             <td>6</td>
                             <td>3</td>
                             <td>6</td>
                             <td><span class="bg-white px-1 rounded-xl text-blue-600">5</span></td>
                         </tr>
                         <tr>
-                            <td class="text-left pl-2 text-amber-500 font-bold">Entitats</td>
+                            <td class="text-left text-sm pl-2 text-amber-500 font-bold">Convenis Entitats</td>
                             <td class="bg-white">&nbsp;</td>
                             <td colspan="3">&nbsp;</td>
                             <td class="bg-white">&nbsp;</td>
@@ -250,7 +252,7 @@
                             <td class="bg-white">&nbsp;</td>
                             <td>4</td>
                             <td>62</td>
-                            <td class="text-red-600 font-bold">70</td>
+                            <td class="text-red-600 font-bold">69</td>
                             <td class="bg-white">&nbsp;</td>
                             <td>5</td>
                             <td>9</td>
@@ -259,7 +261,7 @@
                             <td>2</td>
                             <td>4</td>
                             <td>1</td>
-                            <td>10</td>
+                            <td>9</td>
                             <td>7</td>
                             <td>7</td>
                             <td>9</td>
@@ -530,7 +532,7 @@
                             <td class="bg-white">&nbsp;</td>
                             <td>1451</td>
                             <td>217</td>
-                            <td><span class="bg-white px-1 rounded-xl text-red-600">252</span></td>
+                            <td><span class="bg-white px-1 rounded-xl text-red-600">251</span></td>
                             <td class="bg-white">&nbsp;</td>
                             <td>23</td>
                             <td>23</td>
@@ -539,31 +541,178 @@
                             <td>17</td>
                             <td>17</td>
                             <td>12</td>
-                            <td>10</td>
+                            <td>9</td>
                             <td>20</td>
                             <td>45</td>
                             <td>35</td>
                             <td><span class="bg-white px-1 rounded-xl text-blue-600">12</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left pl-2 text-amber-500 font-bold text-sm">Convenis Universitats/Esenyament</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td colspan="3">&nbsp;</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td colspan="12">&nbsp;</td>
+                        </tr>
+                        <tr class="bg-cyan-50 text-center">
+                            <td class="text-left pl-2">ESADE-Practicum</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="text-red-600 font-bold">57</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>21</td>
+                            <td>3</td>
+                            <td>8</td>
+                            <td>1</td>
+                            <td>&nbsp;</td>
+                            <td>16</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>8</td>
+                            <td>&nbsp;</td>
+                            <td class="text-blue-600 font-bold">&nbsp;</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td class="text-left pl-2">ESADE-In-Company Business Peoject</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="text-red-600 font-bold">17</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>1</td>
+                            <td>&nbsp;</td>
+                            <td>1</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>2</td>
+                            <td class="text-blue-600 font-bold">&nbsp;</td>
+                        </tr>
+                        <tr class="bg-cyan-50 text-center">
+                            <td class="text-left pl-2">ESADE-TFG</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="text-red-600 font-bold">12</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>4</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="text-blue-600 font-bold">3</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td class="text-left pl-2">IQS</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="text-red-600 font-bold">3</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>3</td>
+                            <td>&nbsp;</td>
+                            <td class="text-blue-600 font-bold">&nbsp;</td>
+                        </tr>
+                        <tr class="bg-cyan-50 text-center">
+                            <td class="text-left pl-2">Bon Soleil</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="text-red-600 font-bold">1</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>1</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="text-blue-600 font-bold">&nbsp;</td>
+                        </tr>
+                        <tr class="bg-slate-400 text-xs text-center text-white font-bold">
+                            <td class="text-left pl-2">Totals</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><span class="bg-white px-1 rounded-xl text-red-600">90</span></td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>10</td>
+                            <td>28</td>
+                            <td>4</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>&nbsp;</td>
+                            <td>16</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>11</td>
+                            <td>7</td>
+                            <td><span class="bg-white px-1 rounded-xl text-blue-600">3</span></td>
+                        </tr>
+                        <tr class="bg-blue-400 text-xs text-center text-white font-bold">
+                            <td class="text-left pl-2">Totals Entitats + Universitats/Esenyament</td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><span class="bg-white px-1 rounded-xl text-red-600">341</span></td>
+                            <td class="bg-white">&nbsp;</td>
+                            <td>33</td>
+                            <td>51</td>
+                            <td>27</td>
+                            <td>23</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>28</td>
+                            <td>9</td>
+                            <td>20</td>
+                            <td>56</td>
+                            <td>42</td>
+                            <td><span class="bg-white px-1 rounded-xl text-blue-600">15</span></td>
                         </tr>
                         <tr class="bg-gray-200 text-center text-cyan-600 font-bold">
                             <td class="text-left py-3 pl-2  rounded-bl-xl rounded-br-xl">TOTALS</td>
                             <td class="bg-white">&nbsp;</td>
                             <td class="rounded-bl-xl">1594</td>
                             <td>321</td>
-                            <td class="rounded-br-xl"><span class="bg-white px-1 rounded-xl text-red-600">335</span></td>
+                            <td class="rounded-br-xl"><span class="bg-white px-1 rounded-xl text-red-600">425</span></td>
                             <td class="bg-white">&nbsp;</td>
-                            <td class="rounded-bl-xl">32</span></td>
-                            <td>36</td>
-                            <td>31</td>
-                            <td>20</td>
-                            <td>26</td>
+                            <td class="rounded-bl-xl">42</span></td>
+                            <td>64</td>
+                            <td>35</td>
+                            <td>28</td>
+                            <td>29</td>
                             <td>27</td>
-                            <td>21</td>
+                            <td>37</td>
                             <td>10</td>
                             <td>26</td>
+                            <td>59</td>
                             <td>48</td>
-                            <td>41</td>
-                            <td class="rounded-br-xl"><span class="bg-white px-1 rounded-xl text-blue-600">17</span></td>
+                            <td class="rounded-br-xl"><span class="bg-white px-1 rounded-xl text-blue-600">20</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -1345,11 +1494,10 @@
 
         <div id="item2" class="tab tabcontent hidden py-1.5 px-3 border-t-0 mt-14">
             <div class="px-1 overflow-y-auto">
-                <table class="mt-3 text-xs">
+                <table class="text-xs w-full overflow-x-auto">
                     <thead>
                         <tr class="bg-gray-200 text-slate-500 font-bold text-center">
-                            <td class="w-6  rounded-tl-xl">&nbsp;</td>
-                            <td class="w-80 text-left py-3 pl-2 bg-gray-200 text-base rounded-tr-xl">ENTRATS</td>
+                            <td class="w-80 text-left py-3 pl-2 bg-gray-200 text-base rounded-tl-xl rounded-tr-xl">ENTRATS</td>
                             <td class="w-0.5 bg-white">&nbsp;</td>
                             <td class="w-16 rounded-tl-xl">2021</td>
                             <td class="w-16">2022</td>
@@ -1370,8 +1518,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="bg-cyan-50 text-center font-bold cursor-pointer data-row">
-                            <td class="toggle-data w-1 text-center"><i class="fas fa-chevron-right"></i></td>
+                        <tr class="bg-cyan-50 text-center">
                             <td class="text-left pl-2">ESADE</td>
                             <td class="bg-white">&nbsp;</td>
                             <td>29</td>
@@ -1391,29 +1538,7 @@
                             <td>7</td>
                             <td class="text-blue-600 font-bold">3</td>
                         </tr>
-                        <tr class="bg-cyan-50 text-center italic hidden details-row">
-                            <td>&nbsp;</td>
-                            <td class="text-left pl-7">Praticum<br>In-Company B.P.<br>TFG</td>
-                            <td class="bg-white">&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td class="text-red-600">57<br>17<br>9</td>
-                            <td class="bg-white">&nbsp;</td>
-                            <td>&nbsp;<br>6<br>4</td>
-                            <td>21<br>7<br>&nbsp;</td>
-                            <td>3<br>1<br>&nbsp;</td>
-                            <td>8<br>&nbsp;<br>&nbsp;</td>
-                            <td>1<br>1<br>&nbsp;</td>
-                            <td>&nbsp;<br>&nbsp;<br>&nbsp;</td>
-                            <td>16<br>&nbsp;<br>&nbsp;</td>
-                            <td>&nbsp;<br>&nbsp;<br>&nbsp;</td>
-                            <td>&nbsp;<br>&nbsp;<br>&nbsp;</td>
-                            <td>8<br>&nbsp;<br>&nbsp;</td>
-                            <td>&nbsp;<br>2<br>5</td>
-                            <td>&nbsp;<br>&nbsp;<br>&nbsp;</td>
-                        </tr>
                         <tr class="text-center">
-                            <td>&nbsp;</td>
                             <td class="text-left pl-2">EXPLORER</td>
                             <td class="bg-white">&nbsp;</td>
                             <td>&nbsp;</td>
@@ -1434,7 +1559,6 @@
                             <td class="text-blue-600 font-bold">&nbsp;</td>
                         </tr>
                         <tr class="bg-cyan-50 text-center">
-                            <td>&nbsp;</td>
                             <td class="text-left pl-2">Pallars Jussà, International Marketing Services S.L.</td>
                             <td class="bg-white">&nbsp;</td>
                             <td>&nbsp;</td>
@@ -1455,7 +1579,6 @@
                             <td class="text-blue-600 font-bold">&nbsp;</td>
                         </tr>
                         <tr class="text-center">
-                            <td>&nbsp;</td>
                             <td class="text-left pl-2">Anàlisi de Projectes - Jurats de Col·legis</td>
                             <td class="bg-white">&nbsp;</td>
                             <td>&nbsp;</td>
@@ -1476,7 +1599,6 @@
                             <td class="text-blue-600 font-bold">&nbsp;</td>
                         </tr>
                         <tr class="bg-cyan-50 text-center">
-                            <td>&nbsp;</td>
                             <td class="text-left pl-2">IQS</td>
                             <td class="bg-white">&nbsp;</td>
                             <td>&nbsp;</td>
@@ -1497,7 +1619,6 @@
                             <td class="text-blue-600 font-bold">&nbsp;</td>
                         </tr>
                         <tr class="text-center">
-                            <td>&nbsp;</td>
                             <td class="text-left pl-2">Bon Soleil</td>
                             <td class="bg-white">&nbsp;</td>
                             <td>&nbsp;</td>
@@ -1518,7 +1639,6 @@
                             <td class="text-blue-600 font-bold">&nbsp;</td>
                         </tr>
                         <tr class="bg-cyan-50 text-center">
-                            <td>&nbsp;</td>
                             <td class="text-left pl-2">Altres</td>
                             <td class="bg-white">&nbsp;</td>
                             <td>&nbsp;</td>
@@ -1539,8 +1659,7 @@
                             <td class="text-blue-600 font-bold">&nbsp;</td>
                         </tr>
                         <tr class="bg-gray-200 text-cyan-600 font-bold text-center">
-                            <td class="rounded-bl-xl">&nbsp;</td>
-                            <td class="text-left py-3 pl-2 rounded-br-xl">TOTALS</td>
+                            <td class="text-left py-3 pl-2 rounded-br-xl rounded-bl-xl">TOTALS</td>
                             <td class="bg-white">&nbsp;</td>
                             <td class="rounded-bl-xl">29</td>
                             <td>61</td>
@@ -1878,7 +1997,7 @@
                 <table class="mt-3 text-xs">
                     <thead>
                         <tr class="bg-gray-200 text-slate-500 font-bold text-center">
-                            <td class="w-80 text-left py-3 pl-2 bg-gray-200 text-base rounded-tl-xl rounded-tr-xl">ACCIÓ SOCIAL</td>
+                            <td class="w-80 text-left py-3 pl-2 bg-gray-200 text-base rounded-tl-xl rounded-tr-xl">ENTRATS</td>
                             <td class="w-0.5 bg-white">&nbsp;</td>
                             <td class="w-16 rounded-tl-xl">2021</td>
                             <td class="w-16">2022</td>
@@ -3457,19 +3576,19 @@
             evt.currentTarget.className += " active";
 
             if (item === "item1") {
-                titleElement.textContent = "Consultoria/Expedients";
+                titleElement.textContent = "Àrea Consultoria/Expedients";
             } else if (item === "item2") {
-                titleElement.textContent = "Universitats i Ensenyament";
+                titleElement.textContent = "Àrea Universitats i Ensenyament";
             } else if (item === "item3") {
-                titleElement.textContent = "Acció Social";
+                titleElement.textContent = "Àrea Acció Social";
             } else if (item === "item4") {
-                titleElement.textContent = "Formació";
+                titleElement.textContent = "Àrea Formació";
             } else if (item === "item5") {
                 titleElement.textContent = "Seniors/Col·laboradors";
             } else if (item === "item6") {
                 titleElement.textContent = "Convenis/Acords";
             } else if (item === "item7") {
-                titleElement.textContent = "Qualitat";
+                titleElement.textContent = "Àrea Qualitat";
             }
         }
 
